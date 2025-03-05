@@ -40,3 +40,6 @@ Run:
 ```
 python evaluate.py --gt-file path/to/ground_truth.json --pred-file path/to/your_predictions.json
 ```
+
+**Submit to EvalAI Server:**
+Follow the instructions on the [EvalAI challenge page](https://eval.ai/web/challenges/challenge-page/2291/overview) to submit your predictions to the challenge.
