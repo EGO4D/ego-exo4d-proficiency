@@ -13,19 +13,14 @@ Participants must submit a JSON file containing their model predictions. The str
 ```json
 {
   "videos": ["video_1", "video_2", ...],
-  "ego_model_predictions": [[p1, p2, p3, p4], ...],
-  "exo_model_predictions": [
-    [[p1, p2, p3, p4], [p1, p2, p3, p4], [p1, p2, p3, p4], [p1, p2, p3, p4]],
-    ...
-  ]
+  "predictions": [p_1, p_2, ...]
 }
 ```
 
 **2. Model Prediction Details**
 
 **videos:** A list of video identifiers corresponding to test set videos.
-**ego_model_predictions:** A list of 4-dimensional prediction logits for each video from the ego model.
-**exo_model_predictions:** A nested list where each video has 4 sets of 4-dimensional prediction logits, corresponding to the four exo views.
+**predictions:** A list of the predicted proficiency class labels (Novice, Early Expert, Intermediate Expert, Late Expert)
 
 **3. Submission Process**
 
